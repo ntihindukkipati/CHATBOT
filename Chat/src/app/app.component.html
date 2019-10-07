@@ -1,0 +1,36 @@
+
+
+<div>
+ <pre> Hi There!!
+   I'm your survey Bot
+ </pre>
+</div>
+<div>{{this.q}}</div>
+
+<div *ngFor="let ih of inps" >
+ <div>{{ih}}</div><br>
+</div>
+
+
+
+<div class="Chat_Input">
+  <input type="text" id="text" placeholder="enter your text"  size="100" [(ngModel)]="todo">
+    &nbsp;
+  &nbsp;
+  <button type="button" id="tb" size="20" (click)="Click()"> Send </button>
+</div>
+
+
+
+<style>
+  .Chat_Input {
+    position:absolute;
+    align-content: center;
+    bottom:0;
+    left:50;
+
+  }
+
+</style>
+
+<router-outlet></router-outlet>
